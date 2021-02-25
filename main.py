@@ -1,74 +1,136 @@
+__version__ = '0.0.1'
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix import boxlayout
 from kivy.uix import button
 from kivy.clock import Clock
-from kivy.properties import NumericProperty
-import pyttsx3
+from datetime import timedelta,datetime
+from kivy.core.audio import SoundLoader
 import time
 
 class Myapp(App):
-    flag=0
-    mytime=NumericProperty(0)
     def build(self):
-        layout = boxlayout.BoxLayout(padding=200)
+        self.flag = 0
+        self.original_time=datetime.now()
+        self.clock = datetime.now()
+        self.my_label = Label(text=datetime.now().strftime('%H:%M:%S'))
+        self.layout = boxlayout.BoxLayout(padding=200)
         color=[1,0,0,1]
-        btn=button.Button(text="Iniciar",background_color=color,size_hint=(.5,.5),pos_hint={'center_x':.5,'center_y':.5})
-        btn1=button.Button(text="Parar",background_color=color,size_hint=(.5,.5),pos_hint={'center_x':.5,'center_y':.5})
-        btn2=button.Button(text='Reset',background_color=color,size_hint=(.5,.5),pos_hint={'center_x':.5,'center_y':.5})
-        label=Label(text=str(self.mytime))
-        layout.add_widget(btn)
-        layout.add_widget(btn1)
-        layout.add_widget(btn2)
-        layout.add_widget(label)
-        btn.bind(on_press=self.start_counting)
-        btn1.bind(on_press=self.stop_counting)
+        btn=button.Button(text="Start",background_color=color,size_hint=(.5,.5),pos_hint={'center_x':.5,'center_y':.5})
+        btn1=button.Button(text="Stop",background_color=color,size_hint=(.5,.5),pos_hint={'center_x':.5,'center_y':.5})
+        btn2=button.Button(text='Restart',background_color=color,size_hint=(.5,.5),pos_hint={'center_x':.5,'center_y':.5})
+        Clock.schedule_interval(self.update_clock, 1)
+        self.layout.add_widget(btn)
+        self.layout.add_widget(btn1)
+        self.layout.add_widget(btn2)
+        self.layout.add_widget(self.my_label)
+        btn.bind(on_press=self.startspeak)
+        btn1.bind(on_press=self.stopspeak)
         btn2.bind(on_press=self.reset)
-        return layout
-
-
-    def increment_time(self,interval):
-        self.mytime+=1
-        print(f'{self.mytime}')
- 
-
-    def start_counting(self,instance):
-        self.flag=1
-        Clock.unschedule(self.increment_time)
-        Clock.schedule_interval(self.increment_time,1)
-        Clock.schedule_interval(self.speak,10)
-        #self.speak(self.increment_time)
+        return self.layout
+        
+    def speak(self,*args):
+        self.now=datetime.now()
+        min_now = self.now.minute
+        min_og = self.original_time.minute
+        diff = min_now - min_og
+        if diff == 0 and self.flag == 0:
+            self.speak0()
+            self.flag=1
+        elif diff==1 and self.flag == 1:
+            self.speak1()
+            self.flag = 2
+        elif diff==2 and self.flag==2:
+            self.speak2()
+            self.flag=3
+        elif diff==3 and self.flag ==3:
+            self.speak3()
+            self.flag=4
+        elif diff==4 and self.flag==4:
+            self.speak4()
+            self.flag =5
+        elif diff==5 and self.flag ==5:
+            self.speak5()
+            self.flag = 6
+        elif diff==6 and self.flag ==6:
+            self.speak6()
+            self.flag =7
+        elif diff==7 and self.flag ==7:
+            self.speak7()
+            self.flag =8
+        elif diff==8 and self.flag ==8:
+            self.speak8()
+            self.flag =9
+        elif diff==9 and self.flag ==9:
+            self.speak9()
+            self.flag = 10
+        elif diff == 10 and self.flag==10:
+            self.flag = 0
+            self.original_time = datetime.now()
+    
+        
+    def update_clock(self,*args):
+        self.clock = self.clock + timedelta(seconds = 1)
+        self.my_label.text =datetime.now().strftime('%H:%M:%S')
         
 
-    def stop_counting(self,instance):
-        self.flag=0
-        Clock.unschedule(self.increment_time)
-        print(f'flag{self.flag}')
-        print(f'tempo_stop:{self.mytime}')
+    def speak0(self,*args):
+        sound=SoundLoader.load('0.mp3')
+        sound.play()
 
-    def reset(self,instance):
-        self.mytime=0
-        print(f'tempo:{self.mytime}')
+    def speak1(self,*args):
+        sound=SoundLoader.load('1.mp3')
+        sound.play()
+    
+    def speak2(self,*args):
+        sound=SoundLoader.load('2.mp3')
+        sound.play()
 
-    def speak(self,instance):
-        #use pyttsx3 to speak
-        if (self.mytime==10):
-            engine =pyttsx3.init()
-            engine.say("minute one!")
-            engine.runAndWait()
-            engine.stop()
-        elif (self.mytime==20):
-            engine =pyttsx3.init()
-            engine.say("minute two!")
-            engine.runAndWait()
-            engine.stop()
-        else:
-            pass
-                
+    def speak3(self,*args):
+        sound=SoundLoader.load('3.mp3')
+        sound.play()
+    
+    def speak4(self,*args):
+        sound=SoundLoader.load('4.mp3')
+        sound.play()
+    
+    def speak5(self,*args):
+        sound=SoundLoader.load('5.mp3')
+        sound.play()
+    
+    def speak6(self,*args):
+        sound=SoundLoader.load('6.mp3')
+        sound.play()
+    
+    def speak7(self,*args):
+        sound=SoundLoader.load('7.mp3')
+        sound.play()
+    
+    def speak8(self,*args):
+        sound=SoundLoader.load('8.mp3')
+        sound.play()
 
-
-
+    def speak9(self,*args):
+        sound=SoundLoader.load('9.mp3')
+        sound.play()
+    
+    def reset(self,*args):
+        self.original_time = datetime.now()
+        self.flag =0
         
+    
+    def stopspeak(self,*args):
+        Clock.unschedule(self.speak)
+        
+
+    
+    def startspeak(self,*args):
+        self.original_time=datetime.now()
+        Clock.schedule_interval(self.speak,1)
+       
+
+
+
 
 if __name__ == '__main__':
     Myapp().run()
