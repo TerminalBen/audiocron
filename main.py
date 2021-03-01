@@ -75,43 +75,43 @@ class Myapp(App):
         
 
     def speak0(self,*args):
-        sound=SoundLoader.load('0.mp3')
+        sound=SoundLoader.load('0.wav')
         sound.play()
 
     def speak1(self,*args):
-        sound=SoundLoader.load('1.mp3')
+        sound=SoundLoader.load('1.wav')
         sound.play()
     
     def speak2(self,*args):
-        sound=SoundLoader.load('2.mp3')
+        sound=SoundLoader.load('2.wav')
         sound.play()
 
     def speak3(self,*args):
-        sound=SoundLoader.load('3.mp3')
+        sound=SoundLoader.load('3.wav')
         sound.play()
     
     def speak4(self,*args):
-        sound=SoundLoader.load('4.mp3')
+        sound=SoundLoader.load('4.wav')
         sound.play()
     
     def speak5(self,*args):
-        sound=SoundLoader.load('5.mp3')
+        sound=SoundLoader.load('5.wav')
         sound.play()
     
     def speak6(self,*args):
-        sound=SoundLoader.load('6.mp3')
+        sound=SoundLoader.load('6.wav')
         sound.play()
     
     def speak7(self,*args):
-        sound=SoundLoader.load('7.mp3')
+        sound=SoundLoader.load('7.wav')
         sound.play()
     
     def speak8(self,*args):
-        sound=SoundLoader.load('8.mp3')
+        sound=SoundLoader.load('8.wav')
         sound.play()
 
     def speak9(self,*args):
-        sound=SoundLoader.load('9.mp3')
+        sound=SoundLoader.load('9.wav')
         sound.play()
     
     def reset(self,*args):
