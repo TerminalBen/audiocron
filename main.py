@@ -1,4 +1,5 @@
 __version__ = '0.0.1'
+os.environ['KIVY_AUDIO']='ffpyplayer'
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix import boxlayout
@@ -7,6 +8,9 @@ from kivy.clock import Clock
 from datetime import timedelta,datetime
 from kivy.core.audio import SoundLoader
 import time
+from android.permissions import request_permissions,Permission
+
+request_permissions([Permission.READ_EXTERNAL_STORAGE])
 
 class Myapp(App):
     def build(self):
