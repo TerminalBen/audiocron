@@ -1,5 +1,6 @@
 __version__ = '0.0.1'
-os.environ['KIVY_AUDIO']='ffpyplayer'
+import os
+#os.environ['KIVY_AUDIO']='ffpyplayer'
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix import boxlayout
@@ -11,6 +12,16 @@ import time
 from android.permissions import request_permissions,Permission
 
 request_permissions([Permission.READ_EXTERNAL_STORAGE])
+sound0=SoundLoader.load('0.wav')
+sound1=SoundLoader.load('1.wav')
+sound2=SoundLoader.load('2.wav')
+sound3=SoundLoader.load('3.wav')
+sound4=SoundLoader.load('4.wav')
+sound5=SoundLoader.load('5.wav')
+sound6=SoundLoader.load('6.wav')
+sound7=SoundLoader.load('7.wav')
+sound8=SoundLoader.load('8.wav')
+sound9=SoundLoader.load('9.wav')
 
 class Myapp(App):
     def build(self):
@@ -78,45 +89,44 @@ class Myapp(App):
         self.my_label.text =datetime.now().strftime('%H:%M:%S')
         
 
-    def speak0(self,*args):
-        sound=SoundLoader.load('0.wav')
-        sound.play()
+    def speak0(self):
+        sound0.play()
 
-    def speak1(self,*args):
-        sound=SoundLoader.load('1.wav')
-        sound.play()
+    def speak1(self):
+        #sound1=SoundLoader.load('1.wav')
+        sound1.play()
     
-    def speak2(self,*args):
-        sound=SoundLoader.load('2.wav')
-        sound.play()
+    def speak2(self):
+        #sound2=SoundLoader.load('2.wav')
+        sound2.play()
 
-    def speak3(self,*args):
-        sound=SoundLoader.load('3.wav')
-        sound.play()
+    def speak3(self):
+        #sound3=SoundLoader.load('3.wav')
+        sound3.play()
     
-    def speak4(self,*args):
-        sound=SoundLoader.load('4.wav')
-        sound.play()
+    def speak4(self):
+        #sound4=SoundLoader.load('4.wav')
+        sound4.play()
     
-    def speak5(self,*args):
-        sound=SoundLoader.load('5.wav')
-        sound.play()
+    def speak5(self):
+        #sound5=SoundLoader.load('5.wav')
+        sound5.play()
     
-    def speak6(self,*args):
-        sound=SoundLoader.load('6.wav')
-        sound.play()
+    def speak6(self):
+        #sound6=SoundLoader.load('6.wav')
+        sound6.play()
     
-    def speak7(self,*args):
-        sound=SoundLoader.load('7.wav')
-        sound.play()
+    def speak7(self):
+        #sound7=SoundLoader.load('7.wav')
+        sound7.play()
     
-    def speak8(self,*args):
-        sound=SoundLoader.load('8.wav')
-        sound.play()
+    def speak8(self):
+        #sound8=SoundLoader.load('8.wav')
+        sound8.play()
 
-    def speak9(self,*args):
-        sound=SoundLoader.load('9.wav')
-        sound.play()
+    def speak9(self):
+        #sound9=SoundLoader.load('9.wav')
+        sound9.play()
     
     def reset(self,*args):
         self.original_time = datetime.now()
