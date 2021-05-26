@@ -1,0 +1,162 @@
+bento@desktop:~/Documents/audiocron$ buildozer android logcat
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Run 'dpkg --version'
+# Cwd None
+Debian 'dpkg' package management program version 1.19.7 (amd64).
+This is free software; see the GNU General Public License version 2 or
+later for copying conditions. There is NO warranty.
+# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /home/bento/.local/bin/cython
+# Search for Java compiler (javac)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
+# Search for Java keytool (keytool)
+#  -> found at /usr/lib/jvm/java-11-openjdk-amd64/bin/keytool
+# Run '/home/bento/.buildozer/android/platform/android-sdk/platform-tools/adb devices'
+# Cwd None
+List of devices attached
+def7b165	device
+
+# Run '/home/bento/.buildozer/android/platform/android-sdk/platform-tools/adb logcat *:S python:D '
+# Cwd /home/bento/.buildozer/android/platform
+--------- beginning of system
+--------- beginning of crash
+--------- beginning of main
+05-26 13:51:16.693 10963 10991 I python  : Initializing Python for Android
+05-26 13:51:16.693 10963 10991 I python  : Setting additional env vars from p4a_env_vars.txt
+05-26 13:51:16.693 10963 10991 I python  : Changing directory to the one provided by ANDROID_ARGUMENT
+05-26 13:51:16.693 10963 10991 I python  : /data/user/0/org.terminalben.audiocron/files/app
+05-26 13:51:16.693 10963 10991 I python  : Preparing to initialize python
+05-26 13:51:16.693 10963 10991 I python  : _python_bundle dir exists
+05-26 13:51:16.693 10963 10991 I python  : calculated paths to be...
+05-26 13:51:16.693 10963 10991 I python  : /data/user/0/org.terminalben.audiocron/files/app/_python_bundle/stdlib.zip:/data/user/0/org.terminalben.audiocron/files/app/_python_bundle/modules
+05-26 13:51:16.693 10963 10991 I python  : set wchar paths...
+05-26 13:51:16.745 10963 10991 I python  : Initialized python
+05-26 13:51:16.745 10963 10991 I python  : AND: Init threads
+05-26 13:51:16.746 10963 10991 I python  : testing python print redirection
+05-26 13:51:16.746 10963 10991 I python  : Android path ['.', '/data/user/0/org.terminalben.audiocron/files/app/_python_bundle/stdlib.zip', '/data/user/0/org.terminalben.audiocron/files/app/_python_bundle/modules', '/data/user/0/org.terminalben.audiocron/files/app/_python_bundle/site-packages']
+05-26 13:51:16.746 10963 10991 I python  : os.environ is environ({'PATH': '/sbin:/system/sbin:/product/bin:/apex/com.android.runtime/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin', 'ANDROID_BOOTLOGO': '1', 'ANDROID_ROOT': '/system', 'ANDROID_ASSETS': '/system/app', 'ANDROID_DATA': '/data', 'ANDROID_STORAGE': '/storage', 'ANDROID_RUNTIME_ROOT': '/apex/com.android.runtime', 'ANDROID_TZDATA_ROOT': '/apex/com.android.tzdata', 'EXTERNAL_STORAGE': '/sdcard', 'ASEC_MOUNTPOINT': '/mnt/asec', 'BOOTCLASSPATH': '/apex/com.android.runtime/javalib/core-oj.jar:/apex/com.android.runtime/javalib/core-libart.jar:/apex/com.android.runtime/javalib/okhttp.jar:/apex/com.android.runtime/javalib/bouncycastle.jar:/apex/com.android.runtime/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/miuisdk@boot.jar:/system/framework/miuisystemsdk@boot.jar:/system/framework/android.test.base.jar:/system/framework/tcmiface.jar:/system/framework/telephony-ext.jar:/system/framework/qcom.fmradio.jar:/system/framework/com.nxp.nfc.jar:/system/framework/QPerformance.jar:/system/framework/UxPerformance.jar:/system/framework/WfdCommon.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.media/javalib/updatable-media.jar', 'DEX2OATBOOTCLASSPATH': '/apex/com.android.runtime/javalib/core-oj.jar:/apex/com.android.runtime/javalib/core-libart.jar:/apex/com.android.runtime/javalib/okhttp.jar:/apex/com.android.runtime/javalib/bouncycastle.jar:/apex/com.android.runtime/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/miuisdk@boot.jar:/system/framework/miuisystemsdk@boot.jar:/system/framework/android.test.base.jar:/system/framework/tcmiface.jar:/system/framework/telephony-ext.jar:/system/framework/qcom.fmradio.jar:/system/framework/com.nxp.nfc.jar:/system/framework/QPerformance.jar:/system/framework/UxPerformance.jar:/system/framework/WfdCommon.jar', 'SYSTEMSERVERCLASSPATH': '/system/framework/services.jar:/system/framework/ethernet-service.jar:/system/framework/wifi-service.jar:/system/framework/com.android.location.provider.jar', 'DOWNLOAD_CACHE': '/data/cache', 'ANDROID_SOCKET_zygote_secondary': '19', 'ANDROID_SOCKET_usap_pool_secondary': '20', 'ANDROID_ENTRYPOINT': 'main.pyc', 'ANDROID_ARGUMENT': '/data/user/0/org.terminalben.audiocron/files/app', 'ANDROID_APP_PATH': '/data/user/0/org.terminalben.audiocron/files/app', 'ANDROID_PRIVATE': '/data/user/0/org.terminalben.audiocron/files', 'ANDROID_UNPACK': '/data/user/0/org.terminalben.audiocron/files/app', 'PYTHONHOME': '/data/user/0/org.terminalben.audiocron/files/app', 'PYTHONPATH': '/data/user/0/org.terminalben.audiocron/files/app:/data/user/0/org.terminalben.audiocron/files/app/lib', 'PYTHONOPTIMIZE': '2', 'P4A_BOOTSTRAP': 'SDL2', 'PYTHON_NAME': 'python', 'P4A_IS_WINDOWED': 'True', 'P4A_ORIENTATION': 'portrait', 'P4A_NUMERIC_VERSION': 'None', 'P4A_MINSDK': '21', 'LC_CTYPE': 'C.UTF-8'})
+05-26 13:51:16.747 10963 10991 I python  : Android kivy bootstrap done. __name__ is __main__
+05-26 13:51:16.747 10963 10991 I python  : AND: Ran string
+05-26 13:51:16.747 10963 10991 I python  : Run user program, change dir and execute entrypoint
+05-26 13:51:16.826 10963 10991 I python  : [INFO   ] [Logger      ] Record log in /data/user/0/org.terminalben.audiocron/files/app/.kivy/logs/kivy_21-05-26_1.txt
+05-26 13:51:16.826 10963 10991 I python  : [INFO   ] [Kivy        ] v1.11.1
+05-26 13:51:16.826 10963 10991 I python  : [INFO   ] [Kivy        ] Installed at "/data/user/0/org.terminalben.audiocron/files/app/_python_bundle/site-packages/kivy/__init__.pyc"
+05-26 13:51:16.826 10963 10991 I python  : [INFO   ] [Python      ] v3.8.1 (default, May 26 2021, 13:37:14) 
+05-26 13:51:16.826 10963 10991 I python  : [Clang 8.0.2 (https://android.googlesource.com/toolchain/clang 40173bab62ec7462
+05-26 13:51:16.826 10963 10991 I python  : [INFO   ] [Python      ] Interpreter at ""
+05-26 13:51:17.227 10963 10991 I python  : [INFO   ] [Factory     ] 184 symbols loaded
+05-26 13:51:17.383 10963 10991 I python  : [INFO   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_gif (img_pil, img_ffpyplayer ignored)
+05-26 13:51:17.405 10963 10991 I python  : [INFO   ] [Text        ] Provider: sdl2
+05-26 13:51:17.422 10963 10991 I python  : [INFO   ] [Audio       ] Providers:  (audio_sdl2, audio_ffpyplayer ignored)
+05-26 13:51:17.515 10963 10991 I python  : [INFO   ] [Window      ] Provider: sdl2
+05-26 13:51:17.538 10963 10991 I python  : [INFO   ] [GL          ] Using the "OpenGL ES 2" graphics system
+05-26 13:51:17.539 10963 10991 I python  : [INFO   ] [GL          ] Backend used <sdl2>
+05-26 13:51:17.539 10963 10991 I python  : [INFO   ] [GL          ] OpenGL version <b'OpenGL ES 3.2 V@415.0 (GIT@57da73e, I82b4603a7a, 1607012310) (Date:12/03/20)'>
+05-26 13:51:17.539 10963 10991 I python  : [INFO   ] [GL          ] OpenGL vendor <b'Qualcomm'>
+05-26 13:51:17.539 10963 10991 I python  : [INFO   ] [GL          ] OpenGL renderer <b'Adreno (TM) 618'>
+05-26 13:51:17.539 10963 10991 I python  : [INFO   ] [GL          ] OpenGL parsed version: 3, 2
+05-26 13:51:17.540 10963 10991 I python  : [INFO   ] [GL          ] Texture max size <16384>
+05-26 13:51:17.540 10963 10991 I python  : [INFO   ] [GL          ] Texture max units <16>
+05-26 13:51:17.551 10963 10991 I python  : [INFO   ] [Window      ] auto add sdl2 input provider
+05-26 13:51:17.552 10963 10991 I python  : [INFO   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+05-26 13:51:17.558 10963 10991 I python  : [WARNING] [Base        ] Unknown <android> provider
+05-26 13:51:17.558 10963 10991 I python  : [INFO   ] [Base        ] Start application main loop
+05-26 13:51:17.560 10963 10991 I python  : [INFO   ] [GL          ] NPOT texture support is available
+05-26 13:51:21.108 10963 10991 I python  : [WARNING] [Audio       ] Unable to find a loader for </data/data/org.terminalben.audiocron/files/app/stop.wav>
+05-26 13:51:21.109 10963 10991 I python  : [INFO   ] [Base        ] Leaving application in progress...
+05-26 13:51:21.109 10963 10991 I python  :  Traceback (most recent call last):
+05-26 13:51:21.110 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/app/main.py", line 203, in <module>
+05-26 13:51:21.111 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/app.py", line 855, in run
+05-26 13:51:21.112 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/base.py", line 504, in runTouchApp
+05-26 13:51:21.113 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/core/window/window_sdl2.py", line 747, in mainloop
+05-26 13:51:21.114 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/core/window/window_sdl2.py", line 479, in _mainloop
+05-26 13:51:21.114 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/base.py", line 342, in idle
+05-26 13:51:21.115 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/base.py", line 327, in dispatch_input
+05-26 13:51:21.115 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/base.py", line 233, in post_dispatch_input
+05-26 13:51:21.116 10963 10991 I python  :    File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+05-26 13:51:21.117 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/core/window/__init__.py", line 1402, in on_motion
+05-26 13:51:21.117 10963 10991 I python  :    File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+05-26 13:51:21.118 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/core/window/__init__.py", line 1418, in on_touch_down
+05-26 13:51:21.119 10963 10991 I python  :    File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+05-26 13:51:21.119 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/uix/widget.py", line 549, in on_touch_down
+05-26 13:51:21.121 10963 10991 I python  :    File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+05-26 13:51:21.122 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/uix/behaviors/button.py", line 151, in on_touch_down
+05-26 13:51:21.122 10963 10991 I python  :    File "kivy/_event.pyx", line 703, in kivy._event.EventDispatcher.dispatch
+05-26 13:51:21.123 10963 10991 I python  :    File "kivy/_event.pyx", line 1214, in kivy._event.EventObservers.dispatch
+05-26 13:51:21.123 10963 10991 I python  :    File "kivy/_event.pyx", line 1138, in kivy._event.EventObservers._dispatch
+05-26 13:51:21.124 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/app/main.py", line 191, in stopspeak
+05-26 13:51:21.125 10963 10991 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/app/main.py", line 180, in stop_sound
+05-26 13:51:21.126 10963 10991 I python  :  AttributeError: 'NoneType' object has no attribute 'play'
+05-26 13:51:21.126 10963 10991 I python  : Python for android ended.
+05-26 13:51:27.305 11016 11045 I python  : Initializing Python for Android
+05-26 13:51:27.305 11016 11045 I python  : Setting additional env vars from p4a_env_vars.txt
+05-26 13:51:27.305 11016 11045 I python  : Changing directory to the one provided by ANDROID_ARGUMENT
+05-26 13:51:27.305 11016 11045 I python  : /data/user/0/org.terminalben.audiocron/files/app
+05-26 13:51:27.305 11016 11045 I python  : Preparing to initialize python
+05-26 13:51:27.305 11016 11045 I python  : _python_bundle dir exists
+05-26 13:51:27.305 11016 11045 I python  : calculated paths to be...
+05-26 13:51:27.305 11016 11045 I python  : /data/user/0/org.terminalben.audiocron/files/app/_python_bundle/stdlib.zip:/data/user/0/org.terminalben.audiocron/files/app/_python_bundle/modules
+05-26 13:51:27.305 11016 11045 I python  : set wchar paths...
+05-26 13:51:27.340 11016 11045 I python  : Initialized python
+05-26 13:51:27.340 11016 11045 I python  : AND: Init threads
+05-26 13:51:27.341 11016 11045 I python  : testing python print redirection
+05-26 13:51:27.341 11016 11045 I python  : Android path ['.', '/data/user/0/org.terminalben.audiocron/files/app/_python_bundle/stdlib.zip', '/data/user/0/org.terminalben.audiocron/files/app/_python_bundle/modules', '/data/user/0/org.terminalben.audiocron/files/app/_python_bundle/site-packages']
+05-26 13:51:27.342 11016 11045 I python  : os.environ is environ({'PATH': '/sbin:/system/sbin:/product/bin:/apex/com.android.runtime/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin', 'ANDROID_BOOTLOGO': '1', 'ANDROID_ROOT': '/system', 'ANDROID_ASSETS': '/system/app', 'ANDROID_DATA': '/data', 'ANDROID_STORAGE': '/storage', 'ANDROID_RUNTIME_ROOT': '/apex/com.android.runtime', 'ANDROID_TZDATA_ROOT': '/apex/com.android.tzdata', 'EXTERNAL_STORAGE': '/sdcard', 'ASEC_MOUNTPOINT': '/mnt/asec', 'BOOTCLASSPATH': '/apex/com.android.runtime/javalib/core-oj.jar:/apex/com.android.runtime/javalib/core-libart.jar:/apex/com.android.runtime/javalib/okhttp.jar:/apex/com.android.runtime/javalib/bouncycastle.jar:/apex/com.android.runtime/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/miuisdk@boot.jar:/system/framework/miuisystemsdk@boot.jar:/system/framework/android.test.base.jar:/system/framework/tcmiface.jar:/system/framework/telephony-ext.jar:/system/framework/qcom.fmradio.jar:/system/framework/com.nxp.nfc.jar:/system/framework/QPerformance.jar:/system/framework/UxPerformance.jar:/system/framework/WfdCommon.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.media/javalib/updatable-media.jar', 'DEX2OATBOOTCLASSPATH': '/apex/com.android.runtime/javalib/core-oj.jar:/apex/com.android.runtime/javalib/core-libart.jar:/apex/com.android.runtime/javalib/okhttp.jar:/apex/com.android.runtime/javalib/bouncycastle.jar:/apex/com.android.runtime/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/miuisdk@boot.jar:/system/framework/miuisystemsdk@boot.jar:/system/framework/android.test.base.jar:/system/framework/tcmiface.jar:/system/framework/telephony-ext.jar:/system/framework/qcom.fmradio.jar:/system/framework/com.nxp.nfc.jar:/system/framework/QPerformance.jar:/system/framework/UxPerformance.jar:/system/framework/WfdCommon.jar', 'SYSTEMSERVERCLASSPATH': '/system/framework/services.jar:/system/framework/ethernet-service.jar:/system/framework/wifi-service.jar:/system/framework/com.android.location.provider.jar', 'DOWNLOAD_CACHE': '/data/cache', 'ANDROID_SOCKET_zygote_secondary': '19', 'ANDROID_SOCKET_usap_pool_secondary': '20', 'ANDROID_ENTRYPOINT': 'main.pyc', 'ANDROID_ARGUMENT': '/data/user/0/org.terminalben.audiocron/files/app', 'ANDROID_APP_PATH': '/data/user/0/org.terminalben.audiocron/files/app', 'ANDROID_PRIVATE': '/data/user/0/org.terminalben.audiocron/files', 'ANDROID_UNPACK': '/data/user/0/org.terminalben.audiocron/files/app', 'PYTHONHOME': '/data/user/0/org.terminalben.audiocron/files/app', 'PYTHONPATH': '/data/user/0/org.terminalben.audiocron/files/app:/data/user/0/org.terminalben.audiocron/files/app/lib', 'PYTHONOPTIMIZE': '2', 'P4A_BOOTSTRAP': 'SDL2', 'PYTHON_NAME': 'python', 'P4A_IS_WINDOWED': 'True', 'P4A_ORIENTATION': 'portrait', 'P4A_NUMERIC_VERSION': 'None', 'P4A_MINSDK': '21', 'LC_CTYPE': 'C.UTF-8'})
+05-26 13:51:27.342 11016 11045 I python  : Android kivy bootstrap done. __name__ is __main__
+05-26 13:51:27.342 11016 11045 I python  : AND: Ran string
+05-26 13:51:27.342 11016 11045 I python  : Run user program, change dir and execute entrypoint
+05-26 13:51:27.429 11016 11045 I python  : [INFO   ] [Logger      ] Record log in /data/user/0/org.terminalben.audiocron/files/app/.kivy/logs/kivy_21-05-26_2.txt
+05-26 13:51:27.429 11016 11045 I python  : [INFO   ] [Kivy        ] v1.11.1
+05-26 13:51:27.429 11016 11045 I python  : [INFO   ] [Kivy        ] Installed at "/data/user/0/org.terminalben.audiocron/files/app/_python_bundle/site-packages/kivy/__init__.pyc"
+05-26 13:51:27.429 11016 11045 I python  : [INFO   ] [Python      ] v3.8.1 (default, May 26 2021, 13:37:14) 
+05-26 13:51:27.429 11016 11045 I python  : [Clang 8.0.2 (https://android.googlesource.com/toolchain/clang 40173bab62ec7462
+05-26 13:51:27.429 11016 11045 I python  : [INFO   ] [Python      ] Interpreter at ""
+05-26 13:51:27.846 11016 11045 I python  : [INFO   ] [Factory     ] 184 symbols loaded
+05-26 13:51:28.008 11016 11045 I python  : [INFO   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_gif (img_pil, img_ffpyplayer ignored)
+05-26 13:51:28.031 11016 11045 I python  : [INFO   ] [Text        ] Provider: sdl2
+05-26 13:51:28.048 11016 11045 I python  : [INFO   ] [Audio       ] Providers:  (audio_sdl2, audio_ffpyplayer ignored)
+05-26 13:51:28.145 11016 11045 I python  : [INFO   ] [Window      ] Provider: sdl2
+05-26 13:51:28.169 11016 11045 I python  : [INFO   ] [GL          ] Using the "OpenGL ES 2" graphics system
+05-26 13:51:28.170 11016 11045 I python  : [INFO   ] [GL          ] Backend used <sdl2>
+05-26 13:51:28.170 11016 11045 I python  : [INFO   ] [GL          ] OpenGL version <b'OpenGL ES 3.2 V@415.0 (GIT@57da73e, I82b4603a7a, 1607012310) (Date:12/03/20)'>
+05-26 13:51:28.170 11016 11045 I python  : [INFO   ] [GL          ] OpenGL vendor <b'Qualcomm'>
+05-26 13:51:28.170 11016 11045 I python  : [INFO   ] [GL          ] OpenGL renderer <b'Adreno (TM) 618'>
+05-26 13:51:28.171 11016 11045 I python  : [INFO   ] [GL          ] OpenGL parsed version: 3, 2
+05-26 13:51:28.171 11016 11045 I python  : [INFO   ] [GL          ] Texture max size <16384>
+05-26 13:51:28.171 11016 11045 I python  : [INFO   ] [GL          ] Texture max units <16>
+05-26 13:51:28.182 11016 11045 I python  : [INFO   ] [Window      ] auto add sdl2 input provider
+05-26 13:51:28.182 11016 11045 I python  : [INFO   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+05-26 13:51:28.188 11016 11045 I python  : [WARNING] [Base        ] Unknown <android> provider
+05-26 13:51:28.188 11016 11045 I python  : [INFO   ] [Base        ] Start application main loop
+05-26 13:51:28.190 11016 11045 I python  : [INFO   ] [GL          ] NPOT texture support is available
+05-26 13:51:30.192 11016 11045 I python  : [WARNING] [Audio       ] Unable to find a loader for </data/data/org.terminalben.audiocron/files/app/init.wav>
+05-26 13:51:30.193 11016 11045 I python  : [INFO   ] [Base        ] Leaving application in progress...
+05-26 13:51:30.194 11016 11045 I python  :  Traceback (most recent call last):
+05-26 13:51:30.195 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/app/main.py", line 203, in <module>
+05-26 13:51:30.196 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/app.py", line 855, in run
+05-26 13:51:30.197 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/base.py", line 504, in runTouchApp
+05-26 13:51:30.198 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/core/window/window_sdl2.py", line 747, in mainloop
+05-26 13:51:30.199 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/core/window/window_sdl2.py", line 479, in _mainloop
+05-26 13:51:30.201 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/base.py", line 342, in idle
+05-26 13:51:30.202 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/base.py", line 327, in dispatch_input
+05-26 13:51:30.203 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/base.py", line 233, in post_dispatch_input
+05-26 13:51:30.204 11016 11045 I python  :    File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+05-26 13:51:30.205 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/core/window/__init__.py", line 1402, in on_motion
+05-26 13:51:30.205 11016 11045 I python  :    File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+05-26 13:51:30.206 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/core/window/__init__.py", line 1418, in on_touch_down
+05-26 13:51:30.207 11016 11045 I python  :    File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+05-26 13:51:30.208 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/uix/widget.py", line 549, in on_touch_down
+05-26 13:51:30.208 11016 11045 I python  :    File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+05-26 13:51:30.209 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/platform/build-armeabi-v7a/build/python-installs/audiocron/kivy/uix/behaviors/button.py", line 151, in on_touch_down
+05-26 13:51:30.210 11016 11045 I python  :    File "kivy/_event.pyx", line 703, in kivy._event.EventDispatcher.dispatch
+05-26 13:51:30.211 11016 11045 I python  :    File "kivy/_event.pyx", line 1214, in kivy._event.EventObservers.dispatch
+05-26 13:51:30.212 11016 11045 I python  :    File "kivy/_event.pyx", line 1138, in kivy._event.EventObservers._dispatch
+05-26 13:51:30.213 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/app/main.py", line 200, in startspeak
+05-26 13:51:30.214 11016 11045 I python  :    File "/home/bento/Documents/audiocron/.buildozer/android/app/main.py", line 174, in init_sound
+05-26 13:51:30.215 11016 11045 I python  :  AttributeError: 'NoneType' object has no attribute 'play'
+05-26 13:51:30.215 11016 11045 I python  : Python for android ended.
+

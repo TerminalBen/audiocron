@@ -1,3 +1,0 @@
-title=MinuteX
-author=TerminalBen
-orientation=portrait

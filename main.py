@@ -1,5 +1,5 @@
 __version__ = '0.0.3'
-os.environ['KIVY_AUDIO']='ffpyplayer'
+#os.environ['KIVY_AUDIO']='ffpyplayer'
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix import boxlayout
@@ -9,8 +9,8 @@ from kivy.clock import Clock
 from datetime import timedelta,datetime
 from kivy.core.audio import SoundLoader
 import time
-from android.permissions import request_permissions,Permission
-request_permissions([Permission.READ_EXTERNAL_STORAGE])
+#from android.permissions import request_permissions,Permission
+#request_permissions([Permission.READ_EXTERNAL_STORAGE])
 
 class Myapp(App):
     def build(self):
@@ -169,11 +169,7 @@ class Myapp(App):
         time.sleep(2)
         sound.unload()
 
-    def init_sound(self,*args):
-        sound=SoundLoader.load('init.wav')
-        sound.play()
-        #time.sleep(2)
-        #sound.unload()
+    
 
     def stop_sound(self,*args):
         sound=SoundLoader.load('stop.wav')
@@ -199,5 +195,10 @@ class Myapp(App):
         Clock.schedule_interval(self.speak,1)
         self.init_sound()
 
+    def init_sound(self,*args):
+        sound=SoundLoader.load('init.wav')
+        sound.play()
+        #time.sleep(2)
+        #sound.unload()
 if __name__ == '__main__':
     Myapp().run()
