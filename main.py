@@ -2,13 +2,12 @@ __version__ = '0.0.3'
 #os.environ['KIVY_AUDIO']='ffpyplayer'
 from kivy.app import App
 from kivy.uix.label import Label
-from kivy.uix import boxlayout
 from kivy.uix import gridlayout
 from kivy.uix import button
 from kivy.clock import Clock
 from datetime import timedelta,datetime
 from kivy.core.audio import SoundLoader
-import time
+#import time
 #from android.permissions import request_permissions,Permission
 #request_permissions([Permission.READ_EXTERNAL_STORAGE])
 
@@ -112,70 +111,70 @@ class Myapp(App):
     def speak0(self,*args):
         sound=SoundLoader.load('0.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
 
     def speak1(self,*args):
         sound=SoundLoader.load('1.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
     
     def speak2(self,*args):
         sound=SoundLoader.load('2.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
 
     def speak3(self,*args):
         sound=SoundLoader.load('3.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
     
     def speak4(self,*args):
         sound=SoundLoader.load('4.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
     
     def speak5(self,*args):
         sound=SoundLoader.load('5.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
     
     def speak6(self,*args):
         sound=SoundLoader.load('6.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
     
     def speak7(self,*args):
         sound=SoundLoader.load('7.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
     
     def speak8(self,*args):
         sound=SoundLoader.load('8.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
 
     def speak9(self,*args):
         sound=SoundLoader.load('9.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
 
     
 
     def stop_sound(self,*args):
         sound=SoundLoader.load('stop.wav')
         sound.play()
-        time.sleep(2)
-        sound.unload()
+        #time.sleep(2)
+        #sound.unload()
 
     def reset(self,*args):
         #self.original_time = datetime.now()
@@ -200,5 +199,6 @@ class Myapp(App):
         sound.play()
         #time.sleep(2)
         #sound.unload()
+        
 if __name__ == '__main__':
     Myapp().run()
